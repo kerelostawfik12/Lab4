@@ -1,4 +1,4 @@
-//#define Pass60
+#define Pass60
 //#define HD90
 
 using System;
@@ -67,7 +67,7 @@ public class ProgressEvaluator : MonoBehaviour
             if (!Directory.Exists(".git"))
                 throw new EvalFailedException("No .git folder found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc.");
             if (!Directory.Exists(".gitignore"))
-                throw new EvalFailedException("No .git folder found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc.");
+                throw new EvalFailedException("No .git ignore folder found. Do you have a Git repository setup at the same folder level as the Assets folder, Library folder, etc.");
         }
     }
 
